@@ -1,0 +1,5 @@
+{
+  "name": "RENDX by $H",
+  "description": "An application that generates downloadable 3D cartoon characters. Guide character appearance with keywords, prompts, poses, and background styles, powered by the Gemini API.",
+  "requestFramePermissions": []
+}

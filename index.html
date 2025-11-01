@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RENDX by $H</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root, [data-theme="light"] {
+        --background: #f9fafb; /* gray-50 */
+        --surface: #ffffff;
+        --primary: #4f46e5; /* indigo-600 */
+        --primary-hover: #4338ca; /* indigo-700 */
+        --text-primary: #1f2937; /* gray-800 */
+        --text-secondary: #4b5563; /* gray-600 */
+        --text-on-primary: #ffffff;
+        --border-color: #e5e7eb; /* gray-200 */
+        --border-color-strong: #d1d5db; /* gray-300 */
+        --border-color-dashed: #d1d5db;
+        --ring-color: #6366f1; /* indigo-500 */
+        --button-secondary-bg: #f3f4f6; /* gray-100 */
+        --button-secondary-text: #374151; /* gray-700 */
+        --button-secondary-hover-bg: #e5e7eb;
+      }
+      [data-theme="dark"] {
+        --background: #111827; /* gray-900 */
+        --surface: #1f2937; /* gray-800 */
+        --primary: #818cf8; /* indigo-400 */
+        --primary-hover: #6366f1; /* indigo-500 */
+        --text-primary: #f9fafb; /* gray-50 */
+        --text-secondary: #9ca3af; /* gray-400 */
+        --text-on-primary: #1f2937;
+        --border-color: #374151; /* gray-700 */
+        --border-color-strong: #4b5563; /* gray-600 */
+        --border-color-dashed: #4b5563;
+        --ring-color: #818cf8;
+        --button-secondary-bg: #374151;
+        --button-secondary-text: #d1d5db;
+        --button-secondary-hover-bg: #4b5563;
+      }
+      [data-theme="vibrant"] {
+        --background: #fdf2f8; /* pink-50 */
+        --surface: #ffffff;
+        --primary: #ec4899; /* pink-500 */
+        --primary-hover: #db2777; /* pink-600 */
+        --text-primary: #1e293b; /* slate-800 */
+        --text-secondary: #475569; /* slate-600 */
+        --text-on-primary: #ffffff;
+        --border-color: #fce7f3; /* pink-100 */
+        --border-color-strong: #fbcfe8; /* pink-200 */
+        --border-color-dashed: #f9a8d4;
+        --ring-color: #ec4899;
+        --button-secondary-bg: #fce7f3;
+        --button-secondary-text: #be185d;
+        --button-secondary-hover-bg: #fbcfe8;
+      }
+      body {
+        background-color: var(--background);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'var(--background)',
+            surface: 'var(--surface)',
+            primary: 'var(--primary)',
+            'primary-hover': 'var(--primary-hover)',
+            'text-primary': 'var(--text-primary)',
+            'text-secondary': 'var(--text-secondary)',
+            'text-on-primary': 'var(--text-on-primary)',
+            'border-color': 'var(--border-color)',
+            'border-color-strong': 'var(--border-color-strong)',
+            'border-color-dashed': 'var(--border-color-dashed)',
+            'ring-color': 'var(--ring-color)',
+            'button-secondary-bg': 'var(--button-secondary-bg)',
+            'button-secondary-text': 'var(--button-secondary-text)',
+            'button-secondary-hover-bg': 'var(--button-secondary-hover-bg)',
+          }
+        }
+      }
+    }
+  </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
